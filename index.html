@@ -17,7 +17,7 @@
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#impact">Impact</a></li>
-                <!-- <li><a href="#">Portfolio</a></li> -->
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
@@ -43,7 +43,6 @@
                     into the world of technology and coding. I have had the opportunity 
                     to work as the lead programmer on varrious video game projects, which has
                     strengthened my technical skills and love for collaborative innovation.</p>
-
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
                     <p class="tab-links" onclick="opentab('skills')">Skills</p>                    
@@ -58,89 +57,9 @@
                 </div>
                 <div class="tab-contents active-tab" id="experience">
                     <ul> 
-                        <div class="slider-container">
-                            <div class="slider">
-                                <div class="slide active">
-                                    <div class="flip-card">
-                                        <div class="flip-card-inner">
-                                            <div class="flip-card-front">
-                                                <img src="images/Selva.png" alt="Selva">
-                                            </div>
-                                            <div class="flip-card-back"> 
-                                                <img src="images/SlevaBack.png" alt="Back Image"> 
-                                                <div class="overlay-text">
-                                                    <h1>Selva</h1><br>
-                                                    <strong>Role:</strong> Sole Programmer<br><br>
-                                                    <strong>Experience:</strong> Unity Engine Workflow,<br>
-                                                    Dynamic Player Movement, Intro to C#, and Tilemaping<br>
-                                                </div>                                                                                                                                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text"><h3>2022 Jungle Adventure 2D Platformer</h3></div>
-                                </div>
-                                <div class="slide">
-                                    <div class="flip-card">
-                                        <div class="flip-card-inner">
-                                            <div class="flip-card-front">
-                                                <img src="images/Colorezz.png" alt="Colorezz">
-                                            </div>
-                                            <div class="flip-card-back"> 
-                                                <img src="images/ColorezzBack.png" alt="Back Image"> 
-                                                <div class="overlay-text">
-                                                    <h1>Colorezz</h1><br>
-                                                    <strong>Role:</strong> Programmer<br><br>
-                                                    <strong>Experience:</strong> Basic Shader Graph,<br>
-                                                    Unity New Input System, Version Control, and Working with Other Programmers<br>
-                                                </div>                                                                                                                                                                
-                                            </div>
-                                        </div>
-                                    </div>                                
-                                    <div class="text"><h3>2023 Fixed 2D First Person Shooter</h3></div>
-                                </div>
-                                <div class="slide">
-                                    <div class="flip-card">
-                                        <div class="flip-card-inner">
-                                            <div class="flip-card-front">
-                                                <img src="images/VPVR.png" alt="Apartment510">
-                                            </div>
-                                            <div class="flip-card-back"> 
-                                                <img src="images/VPVRBack.png" alt="Back Image"> 
-                                                <div class="overlay-text">
-                                                    <h1>Apartment510</h1><br>
-                                                    <strong>Role:</strong> Lead Programmer and Level Design<br><br>
-                                                    <strong>Experience:</strong> First 3D Project, Baked Lighting,
-                                                    Use of Static Data, and Understanding of Unity XR Interaction Framework<br>
-                                                </div>                                                                                                                                                                
-                                            </div>
-                                        </div>
-                                    </div>                                   
-                                    <div class="text"><h3>2024 VR Escape Room</h3></div> 
-                                </div>
-                                <div class="slide">
-                                    <div class="flip-card">
-                                        <div class="flip-card-inner">
-                                            <div class="flip-card-front">
-                                                <img src="images/QuackAttack.png" alt="QuackAtack">
-                                            </div>
-                                            <div class="flip-card-back"> 
-                                                <img src="images/QuackAttack.png" alt="Back Image"> 
-                                                <div class="overlay-text">
-                                                    <h1>???</h1><br>                                                              
-                                                </div>                                                                                                                                                                
-                                            </div>
-                                        </div>
-                                    </div>                                   
-                                    <div class="text"><h3>2025 ???</h3></div>
-                                </div>
-                            </div>
-                            <button class="prev" onclick="changeSlide(-1)">
-                                <img src="images/leftarrow.png" alt="Previous">
-                            </button>
-                            <button class="next" onclick="changeSlide(1)">
-                                <img src="images/rightarrow.png" alt="Next">
-                            </button>
-                        </div>
+                        <li><span><strong>Unity Game Devlopment</strong></span><br> 2022-2024 Gameheads student programmer on 3 games</li>
+                        <li><span><strong>Web Development</strong></span><br>This Website! Stay tunned...</li>
+                        <li><span><strong>Leadership Development</strong></span><br>College Ambassador and peer mentor to new students</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
@@ -154,7 +73,110 @@
         </div>
     </div>
 </div>
-
+<!--------Portfolio----------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="row">
+            <div class="portfolio-left">
+                <div class="button-left">
+                    <button class="back" onclick="changeCard(-1)">
+                        <img src="images/leftarrow.png" alt="Previous">
+                    </button>
+                </div>
+                <div class="card-holder">
+                    <div class="cards">
+                        <div class="card active">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="images/Selva.png" alt="Selva">
+                                    </div>
+                                    <div class="flip-card-back"> 
+                                        <img src="images/SlevaBack.png" alt="Back Image"> 
+                                        <div class="overlay-text">
+                                            <h1>Selva</h1><br>
+                                            <strong>Role:</strong> Sole Programmer<br><br>
+                                            <strong>Experience:</strong> Unity Engine Workflow,<br>
+                                            Dynamic Player Movement, Intro to C#, and Tilemaping<br>
+                                        </div>                                                                                                                                                                
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="images/Colorezz.png" alt="Colorezz">
+                                    </div>
+                                    <div class="flip-card-back"> 
+                                        <img src="images/ColorezzBack.png" alt="Back Image"> 
+                                        <div class="overlay-text">
+                                            <h1>Colorezz</h1><br>
+                                            <strong>Role:</strong> Programmer<br><br>
+                                            <strong>Experience:</strong> Basic Shader Graph,<br>
+                                            Unity New Input System, Version Control, and Working with Other Programmers<br>
+                                        </div>                                                                                                                                                                
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="images/VPVR.png" alt="Apartment510">
+                                    </div>
+                                    <div class="flip-card-back"> 
+                                        <img src="images/VPVRBack.png" alt="Back Image"> 
+                                        <div class="overlay-text">
+                                            <h1>Apartment510</h1><br>
+                                            <strong>Role:</strong> Lead Programmer and Level Design<br><br>
+                                            <strong>Experience: </strong> First 3D Project, Baked Lighting,
+                                            Use of Static Data, and Understanding of Unity XR Interaction Framework<br>
+                                        </div>                                                                                                                                                                
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="images/QuackAttack.png" alt="QuackAttack">
+                                    </div>
+                                    <div class="flip-card-back"> 
+                                        <img src="images/QuackAttack.png" alt="Back Image"> 
+                                        <div class="overlay-text">
+                                            <h1>???</h1>                                         
+                                        </div>                                                                                                                                                                
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="button-right">
+                    <button class="forward" onclick="changeCard(1)">
+                        <img src="images/rightarrow.png" alt="Next">
+                    </button>
+                </div>
+            </div>
+            <div class="portfolio-right">
+                <div class="additional-info-text">
+                    <h2>Selva</h2>
+                    <h3>2022 Jungle Adventure 2D Platformer</h3>
+                    <div class="embeded-video">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/h2abkQpf6_M?si=IWLfhk8QqhYThrtY" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!--------Impact----------->
 <div id="impact">
     <div class="container">
@@ -207,17 +229,21 @@
         document.getElementById(tabname).classList.add('active-tab');
     }
 
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.slider .slide');
+    let currentCard = 0;
+    const cards = document.querySelectorAll('.cards .card');
 
-    function showSlide(index) {
-        slides[currentSlide].classList.remove('active');
-        currentSlide = (index + slides.length) % slides.length;
-        slides[currentSlide].classList.add('active');
+    function showCard(index) {
+        cards[currentCard].classList.remove('active');
+        currentCard = (index + cards.length) % cards.length;
+        cards[currentCard].classList.add('active');
     }
 
-    function changeSlide(direction) {
-        showSlide(currentSlide + direction);
+    // function showText(index) {
+
+    // }
+
+    function changeCard(direction) {
+        showCard(currentCard + direction);
     }
 
     // Optional: Auto-slide every 5 seconds
