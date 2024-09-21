@@ -16,8 +16,8 @@
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#impact">Impact</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#impact">Impact</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
@@ -76,11 +76,12 @@
 <!--------Portfolio----------->
 <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">Portfolio</h1>
+        <h1 class="sub-title">Portfolio<i class="fa-solid fa-folder-closed"></i></h1>
+        <h2 class="mobile-text"> For Portfolio Experience Please Resort To Larger Screen Display.<br>Thanks You!</h2>
         <div class="row">
             <div class="portfolio-left">
                 <div class="button-left">
-                    <button class="back" onclick="changeCard(-1)">
+                    <button class="back" onclick="changeSection(-1)">
                         <img src="images/leftarrow.png" alt="Previous">
                     </button>
                 </div>
@@ -158,19 +159,56 @@
                     </div>
                 </div>
                 <div class="button-right">
-                    <button class="forward" onclick="changeCard(1)">
+                    <button class="forward" onclick="changeSection(1)">
                         <img src="images/rightarrow.png" alt="Next">
                     </button>
                 </div>
             </div>
             <div class="portfolio-right">
-                <div class="additional-info-text">
-                    <h2>Selva</h2>
-                    <h3>2022 Jungle Adventure 2D Platformer</h3>
-                    <div class="embeded-video">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/h2abkQpf6_M?si=IWLfhk8QqhYThrtY" 
-                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="info-texts">
+                    <div class="info-text current">
+                        <div class="additional-info-text">
+                            <h2>Selva</h2>
+                            <h3>2022 Jungle Adventure 2D Platformer</h3>
+                            <div class="embeded-video">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/h2abkQpf6_M?si=IWLfhk8QqhYThrtY" 
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                                gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-text">
+                        <div class="additional-info-text">
+                            <h2>Colorezz</h2>
+                            <h3>2023 Fixed 2D First Person Shooter</h3>
+                            <div class="embeded-video">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ULZr5-ryP3c?si=vYh6M5KIHAkvK_7a"
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                                gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <p>Footage courtesy of GameHeads</p>
+                        </div>
+                    </div>
+                    <div class="info-text">
+                        <div class="additional-info-text">
+                            <h2>Apartment510</h2>
+                            <h3>2024 VR Escape Room</h3>
+                            <div class="embeded-video">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/NnzSG0QC4ck?si=qpE6x5NgEOi6hCk8&amp;start=4449" 
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                                gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <p>Footage courtesy of GameHeads</p>
+                        </div>
+                    </div>
+                    <div class="info-text">
+                        <div class="additional-info-text">
+                            <h2>???</h2>
+                            <h3>2025</h3>
+                            <div class="embeded-video">     
+                                <!--Do Not Forget -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -180,7 +218,24 @@
 <!--------Impact----------->
 <div id="impact">
     <div class="container">
-        <h1 class="sub-title">Impact</h1>
+        <h1 class="sub-title">Impact<i class="fas fa-users"></i></h1>
+        <div class="box">            
+            <div class="impact">
+                <h2>Campus Leadership</h2>
+                <p>As a college ambassador, I’ve had the privilege of helping new students smoothly transition into college life. Additionally, as a peer mentor,
+                 I’ve offered guidance by listening to their concerns and sharing valuable campus resources.</p>
+            </div> 
+            <div class="leader-img">
+                <img src="images/Leadership.jpg" alt="Xavier">
+            </div>
+            <div class="impact">
+                <h2>Future Goals</h2>
+                <p>Feeling that I lacked resources in high school to fully understand what a career in tech could look like for me fueled my ambition
+                to pursue computer science. Given the critical role of technology today, my goal is to develop a robust technical skill set that enables
+                me to contribute meaningfully to impactful software and AI innovations.
+                </p>
+            </div>
+        </div>
     </div>
 </div>
 <!--------Contact----------->
@@ -197,7 +252,7 @@
                     <a href="https://www.instagram.com/xavier_xgi/" target="_blank" rel="noopener" rel="noreferrer"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/xaviergonzalez32/" target="_blank" rel="noopener" rel="noreferrer"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                <a href="images/Xavier_CV.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
@@ -232,26 +287,34 @@
     let currentCard = 0;
     const cards = document.querySelectorAll('.cards .card');
 
+    let currentInfoText = 0;
+    const infoTexts = document.querySelectorAll('.info-texts .info-text');
+
     function showCard(index) {
         cards[currentCard].classList.remove('active');
         currentCard = (index + cards.length) % cards.length;
         cards[currentCard].classList.add('active');
     }
 
-    // function showText(index) {
+    function showInfoText(index) {
+        infoTexts[currentInfoText].classList.remove('current');
+        currentInfoText = (index + infoTexts.length) % infoTexts.length;
+        infoTexts[currentInfoText].classList.add('current');
+    }
 
-    // }
+    function changeInfoText(direction){
+        showInfoText(currentInfoText + direction);
+    }
 
     function changeCard(direction) {
         showCard(currentCard + direction);
     }
 
-    // Optional: Auto-slide every 5 seconds
-    //setInterval(() => changeSlide(1), 5000);
-
-
+    function changeSection(direction){
+        changeCard(direction);
+        changeInfoText(direction);
+    }
 </script>
-
 <script>
     var sidemenu = document.getElementById("sidemenu");
     function openmenu(){
@@ -261,7 +324,6 @@
         sidemenu.style.right = "-200px";
     }
 </script>
-
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbx0B__DOv28OPVEanK1juvOLGk4sYUp8IYvePtpC_6oCPhkKwJiBJ-BkMBuHuIhgWAZ/exec'
     const form = document.forms['submit-to-google-sheet']
@@ -277,6 +339,5 @@
         .catch(error => console.error('Error!', error.message))
     })
   </script>
-
 </body>
 </html>

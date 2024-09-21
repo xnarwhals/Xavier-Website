@@ -89,3 +89,64 @@
 <button class="forward" onclick="changeSlide(1)">
     <img src="images/rightarrow.png" alt="Next">
 </button>
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+#scroll-path{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255,255,255, 0.05);
+}
+#progress-bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to bottom, #008aff, #00ffe7);
+    animation: animate 5s linear infinite; 
+}
+@keyframes animate{
+    0%, 100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+} 
+#progress-bar:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #008aff, #00ffe7);
+    filter: blur(10px);
+}
+#progress-bar:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #008aff, #00ffe7);
+    filter: blur(30px);
+}
+
+<div class="scroll-path"></div>
+<div class="progress-bar"></div>
+  <script>
+    let progress = document.querySelector('progress-bar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+
+    window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+    } 
+  </script>
