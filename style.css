@@ -417,8 +417,6 @@ nav .fas{
     #header {
         background-image: url(images/phone-background.png);
         background-attachment: scroll;
-        background-size: cover;
-        background-position: center;
     }
     .header-text{
         margin-top: 100%;
