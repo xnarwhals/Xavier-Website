@@ -3,22 +3,25 @@
 <head>
     <meta charset = 'UTF-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xavier Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4397789a39.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="header">
     <div class="container">
         <nav>
             <img src="images/logo.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>Computer Programmer</p>
@@ -26,7 +29,7 @@
         </div>
     </div>
 </div>
-<!--------about-------- --->
+<!--------about----------->
 <div id="about">
     <div class="container">
         <div class="row">
@@ -40,43 +43,23 @@
                     into the world of technology and coding. I have had the opportunity 
                     to work as the lead programmer on varrious video game projects, which has
                     strengthened my technical skills and love for collaborative innovation.</p>
-
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>                    
                     <p class="tab-links" onclick="opentab('education')">Education</p>
                 </div>
-                <div class="tab-contents active-tab" id="skills">
+                <div class="tab-contents" id="skills">
                     <ul> 
                         <li><span><strong>Programming Languages</strong></span><br>All C versions, Python, HTML, and CSS</li>
                         <li><span><strong>Unity</strong></span><br>Development Experience in 2D and VR</li>
                         <li><span><strong>Photo/Video Editing</strong></span><br> Photoshop and Premier Pro</li>
                     </ul>
                 </div>
-                <div class="tab-contents" id="experience">
+                <div class="tab-contents active-tab" id="experience">
                     <ul> 
-                        <div class="slider-container">
-                            <div class="slider">
-                                <div class="slide active">
-                                    <img src="images/Selva.png" alt="Selva">
-                                    <div class="text"><strong>2022</strong> Jungle Adventure 2D Platformer</div>
-                                </div>
-                                <div class="slide">
-                                    <img src="images/Colorezz.png" alt="Colorezz">
-                                    <div class="text"><strong>2023</strong> Fixed 2D First Person Shooter</div>
-                                </div>
-                                <div class="slide">
-                                    <img src="images/VPVR.png" alt="Apartment510">
-                                    <div class="text"><strong>2024</strong> VR Escape Room</div>
-                                </div>
-                            </div>
-                            <button class="prev" onclick="changeSlide(-1)">
-                                <img src="images/leftarrow.png" alt="Previous">
-                            </button>
-                            <button class="next" onclick="changeSlide(1)">
-                                <img src="images/rightarrow.png" alt="Next">
-                            </button>
-                        </div>
+                        <li><span><strong>Unity Game Devlopment</strong></span><br> 2022-2024 Gameheads student programmer on 3 games</li>
+                        <li><span><strong>Web Development</strong></span><br>This Website! Stay tunned...</li>
+                        <li><span><strong>Leadership Development</strong></span><br>College Ambassador and peer mentor to new students</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="education">
@@ -90,7 +73,203 @@
         </div>
     </div>
 </div>
-
+<!--------Portfolio----------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio<i class="fa-solid fa-folder-closed"></i></h1>
+        <h2 class="mobile-text"> For Portfolio Experience Please Resort To Larger Screen Display.<br>Thanks You!</h2>
+        <div class="row">
+            <div class="portfolio-left">
+                <div class="button-left">
+                    <button class="back" onclick="changeSection(-1)">
+                        <img src="images/leftarrow.png" alt="Previous">
+                    </button>
+                </div>
+                <div class="card-holder">
+                    <div class="cards">
+                        <div class="card active">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="images/Selva.png" alt="Selva">
+                                    </div>
+                                    <div class="flip-card-back"> 
+                                        <img src="images/SlevaBack.png" alt="Back Image"> 
+                                        <div class="overlay-text">
+                                            <h1>Selva</h1><br>
+                                            <strong>Role:</strong> Sole Programmer<br><br>
+                                            <strong>Experience:</strong> Unity Engine Workflow,<br>
+                                            Dynamic Player Movement, Intro to C#, and Tilemaping<br>
+                                        </div>                                                                                                                                                                
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="images/Colorezz.png" alt="Colorezz">
+                                    </div>
+                                    <div class="flip-card-back"> 
+                                        <img src="images/ColorezzBack.png" alt="Back Image"> 
+                                        <div class="overlay-text">
+                                            <h1>Colorezz</h1><br>
+                                            <strong>Role:</strong> Programmer<br><br>
+                                            <strong>Experience:</strong> Basic Shader Graph,<br>
+                                            Unity New Input System, Version Control, and Working with Other Programmers<br>
+                                        </div>                                                                                                                                                                
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="images/VPVR.png" alt="Apartment510">
+                                    </div>
+                                    <div class="flip-card-back"> 
+                                        <img src="images/VPVRBack.png" alt="Back Image"> 
+                                        <div class="overlay-text">
+                                            <h1>Apartment510</h1><br>
+                                            <strong>Role:</strong> Lead Programmer and Level Design<br><br>
+                                            <strong>Experience: </strong> First 3D Project, Baked Lighting,
+                                            Use of Static Data, and Understanding of Unity XR Interaction Framework<br>
+                                        </div>                                                                                                                                                                
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="images/QuackAttack.png" alt="QuackAttack">
+                                    </div>
+                                    <div class="flip-card-back"> 
+                                        <img src="images/QuackAttack.png" alt="Back Image"> 
+                                        <div class="overlay-text">
+                                            <h1>???</h1>                                         
+                                        </div>                                                                                                                                                                
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="button-right">
+                    <button class="forward" onclick="changeSection(1)">
+                        <img src="images/rightarrow.png" alt="Next">
+                    </button>
+                </div>
+            </div>
+            <div class="portfolio-right">
+                <div class="info-texts">
+                    <div class="info-text current">
+                        <div class="additional-info-text">
+                            <h2>Selva</h2>
+                            <h3>2022 Jungle Adventure 2D Platformer</h3>
+                            <div class="embeded-video">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/h2abkQpf6_M?si=IWLfhk8QqhYThrtY" 
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                                gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-text">
+                        <div class="additional-info-text">
+                            <h2>Colorezz</h2>
+                            <h3>2023 Fixed 2D First Person Shooter</h3>
+                            <div class="embeded-video">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ULZr5-ryP3c?si=vYh6M5KIHAkvK_7a"
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                                gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <p>Footage courtesy of GameHeads</p>
+                        </div>
+                    </div>
+                    <div class="info-text">
+                        <div class="additional-info-text">
+                            <h2>Apartment510</h2>
+                            <h3>2024 VR Escape Room</h3>
+                            <div class="embeded-video">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/NnzSG0QC4ck?si=qpE6x5NgEOi6hCk8&amp;start=4449" 
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                                gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                            <p>Footage courtesy of GameHeads</p>
+                        </div>
+                    </div>
+                    <div class="info-text">
+                        <div class="additional-info-text">
+                            <h2>???</h2>
+                            <h3>2025</h3>
+                            <div class="embeded-video">     
+                                <!--Do Not Forget -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------Impact----------->
+<div id="impact">
+    <div class="container">
+        <h1 class="sub-title">Impact<i class="fas fa-users"></i></h1>
+        <div class="box">            
+            <div class="impact">
+                <h2>Campus Leadership</h2>
+                <p>As a college ambassador, I’ve had the privilege of helping new students smoothly transition into college life. Additionally, as a peer mentor,
+                 I’ve offered guidance by listening to their concerns and sharing valuable campus resources.</p>
+            </div> 
+            <div class="leader-img">
+                <img src="images/Leadership.jpg" alt="Xavier">
+            </div>
+            <div class="impact">
+                <h2>Future Goals</h2>
+                <p>Feeling that I lacked resources in high school to fully understand what a career in tech could look like for me fueled my ambition
+                to pursue computer science. Given the critical role of technology today, my goal is to develop a robust technical skill set that enables
+                me to contribute meaningfully to impactful software and AI innovations.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------Contact----------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>xaviercodegx@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>(510) 266-9804</p>
+                <div class="social-icons">
+                    <a href="https://github.com/xnarwhals" target="_blank" rel="noopener" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://x.com/XavierCodeGH" target="_blank" rel="noopener" rel="noreferrer"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/xavier_xgi/" target="_blank" rel="noopener" rel="noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/xaviergonzalez32/" target="_blank" rel="noopener" rel="noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Xavier_CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name", placeholder="Your Name" required>
+                    <input type="email" name="Email", placeholder="Your Email" required>
+                    <textarea name="Message" rows="6", placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Send Message</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Xavier Gonzalez <i class="fa-solid fa-gamepad"></i> </p>
+    </div>
+</div>
+<!-- Scripting logic -->
 <script>
     var tablinks = document.getElementsByClassName('tab-links');
     var tabcontents = document.getElementsByClassName('tab-contents');
@@ -105,23 +284,60 @@
         document.getElementById(tabname).classList.add('active-tab');
     }
 
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.slider .slide');
+    let currentCard = 0;
+    const cards = document.querySelectorAll('.cards .card');
 
-    function showSlide(index) {
-        slides[currentSlide].classList.remove('active');
-        currentSlide = (index + slides.length) % slides.length;
-        slides[currentSlide].classList.add('active');
+    let currentInfoText = 0;
+    const infoTexts = document.querySelectorAll('.info-texts .info-text');
+
+    function showCard(index) {
+        cards[currentCard].classList.remove('active');
+        currentCard = (index + cards.length) % cards.length;
+        cards[currentCard].classList.add('active');
     }
 
-    function changeSlide(direction) {
-        showSlide(currentSlide + direction);
+    function showInfoText(index) {
+        infoTexts[currentInfoText].classList.remove('current');
+        currentInfoText = (index + infoTexts.length) % infoTexts.length;
+        infoTexts[currentInfoText].classList.add('current');
     }
 
-    // Optional: Auto-slide every 5 seconds
-    //setInterval(() => changeSlide(1), 5000);
+    function changeInfoText(direction){
+        showInfoText(currentInfoText + direction);
+    }
 
+    function changeCard(direction) {
+        showCard(currentCard + direction);
+    }
+
+    function changeSection(direction){
+        changeCard(direction);
+        changeInfoText(direction);
+    }
 </script>
-
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx0B__DOv28OPVEanK1juvOLGk4sYUp8IYvePtpC_6oCPhkKwJiBJ-BkMBuHuIhgWAZ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML = "Message Sent!"; form.reset()
+            setTimeout(function(){msg.innerHTML = ""}, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
